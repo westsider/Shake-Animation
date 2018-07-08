@@ -54,11 +54,11 @@
 		98814E6D20F28C8B000ED49A /* Shake Animation */ = {
 			isa = PBXGroup;
 			children = (
-				98814E6E20F28C8B000ED49A /* AppDelegate.swift */,
-				98814E7020F28C8B000ED49A /* ViewController.swift */,
 				98814E7220F28C8B000ED49A /* Main.storyboard */,
+				98814E7020F28C8B000ED49A /* ViewController.swift */,
 				98814E7520F28C8B000ED49A /* Assets.xcassets */,
 				98814E7720F28C8B000ED49A /* LaunchScreen.storyboard */,
+				98814E6E20F28C8B000ED49A /* AppDelegate.swift */,
 				98814E7A20F28C8B000ED49A /* Info.plist */,
 			);
 			path = "Shake Animation";
