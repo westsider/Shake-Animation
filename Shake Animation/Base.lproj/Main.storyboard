@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8k-5h-8OK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yWB-Wg-kBK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController title="Plate Shaker" id="BYZ-38-t0r" customClass="ViewController" customModule="Shake_Animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hU-8m-x6z" userLabel="CardView">
-                                <rect key="frame" x="37" y="150" width="300" height="250"/>
+                                <rect key="frame" x="37" y="214" width="300" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="z5H-84-Vix" userLabel="All Stack View">
                                         <rect key="frame" x="20" y="16" width="264" height="218"/>
@@ -156,25 +156,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2287.1999999999998" y="133.5832083958021"/>
+        </scene>
+        <!--Plate Shaker-->
+        <scene sceneID="yhl-ob-5K3">
+            <objects>
+                <viewController id="yWB-Wg-kBK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AKY-5K-CHl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRu-Uf-MDJ">
+                                <rect key="frame" x="126" y="318" width="123" height="30"/>
+                                <state key="normal" title="Shake Annimation"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="4fq-de-1GZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xRu-Uf-MDJ" firstAttribute="centerX" secondItem="AKY-5K-CHl" secondAttribute="centerX" id="77I-Au-tQ1"/>
+                            <constraint firstItem="xRu-Uf-MDJ" firstAttribute="centerY" secondItem="AKY-5K-CHl" secondAttribute="centerY" id="iFM-GY-pyZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xIp-KG-VDZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Plate Shaker" id="lDd-OU-kcT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9Z-LF-eee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="bIp-73-YMs">
+        <scene sceneID="DVC-QN-aLh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H8k-5h-8OK" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nl4-27-hti" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="pjo-k5-lEl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jzm-q8-U5d">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xaM-bc-b49"/>
+                        <segue destination="yWB-Wg-kBK" kind="relationship" relationship="rootViewController" id="xS7-1b-s5n"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WWY-Z3-jrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMV-xa-Jtz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="823" y="134"/>
         </scene>
     </scenes>
     <resources>
