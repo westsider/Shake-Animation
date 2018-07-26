@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var cardView: UIView!
     
     @IBOutlet weak var addtressScroll: UITextView!
     
     @IBOutlet weak var topCircleConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var yelpRectangle: UIView!
     
     let address = "1138 Main Street \nNew York, NY 90291 \n212-555-1212"
     
@@ -23,11 +25,20 @@ class ViewController: UIViewController {
         title = "Main Street"
         addtressScroll.text = address
         topCircleConstraint.constant = view.frame.maxY
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
+        tap.delegate = self // This is not required
+        yelpRectangle.addGestureRecognizer(tap)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         entryAnnimation()
+    }
+    
+    @objc func handleTap(sender: UITapGestureRecognizer? = nil) {
+        // handling code
+        print("tapped yelp")
     }
     
     func entryAnnimation() {

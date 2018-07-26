@@ -168,6 +168,7 @@
                         <outlet property="addtressScroll" destination="wlj-ek-WOu" id="Rum-k9-jwx"/>
                         <outlet property="cardView" destination="0hU-8m-x6z" id="CYP-Bq-BLQ"/>
                         <outlet property="topCircleConstraint" destination="7Jx-G1-dxU" id="9UQ-pC-YKs"/>
+                        <outlet property="yelpRectangle" destination="Z4W-BA-pR2" id="pCp-DR-Fph"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
