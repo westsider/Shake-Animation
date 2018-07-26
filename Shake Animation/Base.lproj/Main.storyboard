@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hU-8m-x6z" userLabel="CardView">
-                                <rect key="frame" x="37" y="214" width="300" height="300"/>
+                                <rect key="frame" x="62" y="214" width="250" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="z5H-84-Vix" userLabel="All Stack View">
-                                        <rect key="frame" x="50" y="85.5" width="200" height="129.5"/>
+                                        <rect key="frame" x="25" y="60.5" width="200" height="129.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kul-It-Rk1">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="20.5"/>
@@ -121,13 +121,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="z5H-84-Vix" firstAttribute="centerY" secondItem="0hU-8m-x6z" secondAttribute="centerY" id="Lnz-T8-Zlj"/>
-                                    <constraint firstAttribute="width" constant="300" id="ZI5-4n-nt1"/>
+                                    <constraint firstAttribute="width" constant="250" id="ZI5-4n-nt1"/>
                                     <constraint firstItem="z5H-84-Vix" firstAttribute="centerX" secondItem="0hU-8m-x6z" secondAttribute="centerX" id="lWo-xm-4fq"/>
-                                    <constraint firstAttribute="height" constant="300" id="rlV-K4-ppS"/>
+                                    <constraint firstAttribute="height" constant="250" id="rlV-K4-ppS"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="150"/>
+                                        <real key="value" value="125"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
