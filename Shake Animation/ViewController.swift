@@ -14,31 +14,37 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var addtressScroll: UITextView!
     
-    let address = "1086 Quail Drive \nFestus, MO 63028 \n323-365-4427"
-
+    @IBOutlet weak var topCircleConstraint: NSLayoutConstraint!
+    
+    let address = "1138 Main Street \nNew York, NY 90291 \n212-555-1212"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main Street"
-        
         addtressScroll.text = address
+        topCircleConstraint.constant = view.frame.maxY
     }
 
-}
-
-@IBDesignable
-class DesignableView: UIView {
-}
-
-extension UIView {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        entryAnnimation()
+    }
     
-    @IBInspectable
-    var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
+    func entryAnnimation() {
+        
+        topCircleConstraint.constant = 150
+        UIView.animate(
+            withDuration: 1.25,
+            delay: 0.0,
+            usingSpringWithDamping: 0.4,
+            initialSpringVelocity: 4.0,
+            options: [],
+            animations: {
+                self.view.layoutIfNeeded()
+        }) { (finished) in
+            if finished {
+                
+            }
         }
     }
 }
