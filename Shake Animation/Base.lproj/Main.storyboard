@@ -120,10 +120,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="z5H-84-Vix" firstAttribute="centerY" secondItem="0hU-8m-x6z" secondAttribute="centerY" id="0JP-Yi-YbT"/>
+                                    <constraint firstItem="z5H-84-Vix" firstAttribute="centerY" secondItem="0hU-8m-x6z" secondAttribute="centerY" id="Lnz-T8-Zlj"/>
                                     <constraint firstAttribute="width" constant="300" id="ZI5-4n-nt1"/>
-                                    <constraint firstItem="z5H-84-Vix" firstAttribute="leading" secondItem="0hU-8m-x6z" secondAttribute="leading" constant="50" id="Zvn-e2-iip"/>
-                                    <constraint firstAttribute="trailing" secondItem="z5H-84-Vix" secondAttribute="trailing" constant="50" id="heF-Zx-WMf"/>
+                                    <constraint firstItem="z5H-84-Vix" firstAttribute="centerX" secondItem="0hU-8m-x6z" secondAttribute="centerX" id="lWo-xm-4fq"/>
                                     <constraint firstAttribute="height" constant="300" id="rlV-K4-ppS"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
