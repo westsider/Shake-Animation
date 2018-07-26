@@ -12,11 +12,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cardView: UIView!
     
+    @IBOutlet weak var addtressScroll: UITextView!
+    
+    let address = "1086 Quail Drive \nFestus, MO 63028 \n323-365-4427"
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main Street"
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        addtressScroll.text = address
     }
 
+}
+
+@IBDesignable
+class DesignableView: UIView {
+}
+
+extension UIView {
+    
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
 }
 
