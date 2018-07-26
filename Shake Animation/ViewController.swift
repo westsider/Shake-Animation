@@ -18,6 +18,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var yelpRectangle: UIView!
     
+    @IBOutlet weak var yelpBottomConstraint: NSLayoutConstraint!
+    
     let address = "1138 Main Street \nNew York, NY 90291 \n212-555-1212"
     
     override func viewDidLoad() {
@@ -25,7 +27,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         title = "Main Street"
         addtressScroll.text = address
         topCircleConstraint.constant = view.frame.maxY
-        
+        yelpBottomConstraint.constant = cardView.frame.midY + cardView.frame.height
+        yelpRectangle.isHidden = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
         tap.delegate = self // This is not required
         yelpRectangle.addGestureRecognizer(tap)
@@ -54,9 +57,29 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
                 self.view.layoutIfNeeded()
         }) { (finished) in
             if finished {
+                self.buttonAnnimation()
+            }
+        }
+    }
+    
+    func buttonAnnimation() {
+        
+        yelpRectangle.isHidden = false
+        yelpBottomConstraint.constant = 30
+        UIView.animate(
+            withDuration: 2.25,
+            delay: 1.0,
+            usingSpringWithDamping: 0.4,
+            initialSpringVelocity: 4.0,
+            options: [],
+            animations: {
+                self.view.layoutIfNeeded()
+        }) { (finished) in
+            if finished {
                 
             }
         }
     }
+
 }
 
