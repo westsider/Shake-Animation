@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -147,9 +148,29 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-BA-pR2">
                                 <rect key="frame" x="67" y="597" width="240" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yelp_burst_positive_RGB" translatesAutoresizingMaskIntoConstraints="NO" id="2xI-QD-cVA">
+                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2xI-QD-cVA" secondAttribute="height" multiplier="1:1" id="Fcb-de-Muj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read more on Yelp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26R-wf-pe1">
+                                        <rect key="frame" x="66" y="17" width="121" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="74f-oG-QIe"/>
+                                    <constraint firstAttribute="bottom" secondItem="2xI-QD-cVA" secondAttribute="bottom" id="NxW-zJ-9Ov"/>
+                                    <constraint firstItem="2xI-QD-cVA" firstAttribute="top" secondItem="Z4W-BA-pR2" secondAttribute="top" id="Olo-Vt-yEu"/>
+                                    <constraint firstItem="26R-wf-pe1" firstAttribute="leading" secondItem="2xI-QD-cVA" secondAttribute="trailing" constant="8" id="V45-dd-veb"/>
+                                    <constraint firstItem="26R-wf-pe1" firstAttribute="centerY" secondItem="Z4W-BA-pR2" secondAttribute="centerY" id="Ypn-cy-K1F"/>
+                                    <constraint firstItem="2xI-QD-cVA" firstAttribute="leading" secondItem="Z4W-BA-pR2" secondAttribute="leading" constant="8" id="ZWQ-ha-Lp9"/>
+                                    <constraint firstAttribute="trailing" secondItem="26R-wf-pe1" secondAttribute="trailing" constant="53" id="u8I-uy-b0D"/>
                                     <constraint firstAttribute="height" constant="50" id="wF2-Tr-FQV"/>
                                 </constraints>
                             </view>
@@ -224,6 +245,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Yelp_burst_positive_RGB" width="360" height="360"/>
         <image name="regular_3_half" width="102" height="18"/>
     </resources>
 </document>
