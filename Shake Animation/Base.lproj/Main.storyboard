@@ -145,11 +145,26 @@
                                     <constraint firstAttribute="bottom" secondItem="0hU-8m-x6z" secondAttribute="bottom" constant="25" id="yob-dh-Y2M"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW2-YV-ulL" customClass="PushButton" customModule="Shake_Animation" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="572" width="250" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="AvY-ba-3WT"/>
+                                    <constraint firstAttribute="width" constant="250" id="NSV-Xo-WQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4hG-QY-p3H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="7Jx-G1-dxU"/>
                             <constraint firstItem="4hG-QY-p3H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NEL-2a-iaC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fW2-YV-ulL" secondAttribute="bottom" constant="20" id="P5V-RZ-RTO"/>
+                            <constraint firstItem="fW2-YV-ulL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gQu-hL-uJB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
